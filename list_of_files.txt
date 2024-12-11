@@ -1,0 +1,12 @@
+
+    Directory: /root/powershell/powershell-practice
+
+UnixMode         User Group         LastWriteTime         Size Name
+--------         ---- -----         -------------         ---- ----
+-rw-r--r--       root root       2025-01-29 18:10          231 file.ps1
+-rw-r--r--       root root       2025-01-29 18:07          173 functions.ps1
+-rw-r--r--       root root       2025-01-29 18:27          339 list_of_files.txt
+-rw-r--r--       root root       2025-01-29 18:27          153 list-files.ps1
+-rw-r--r--       root root       2025-01-29 17:26           21 README.md
+-rw-r--r--       root root       2025-01-29 17:43          616 script.ps1
+
