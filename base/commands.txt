@@ -1,0 +1,58 @@
+# Powershell commands:
+Get-Command
+Install-Module AzureAD
+
+Get-ADUser -Filter *
+
+# Connect to remote computer:
+New-PSSession -ComputerName dc01 
+Enter-PSSession -Id 1
+exit
+
+# Run command remotely
+Invoke-Command -ScriptBlock {Get-Process} -ComputerName("dc01", "server3")
+
+# Host Name:
+HostName
+Rename-Computer -ComputerName <Name> -NewName <NewName>
+
+# Server Restart
+Shutdown -r
+
+# # #
+# Active Directory Role Migration:
+# - adprep schema
+# - adprep forest
+# - adprep domain
+# - intall role
+# - promote to domain controller
+
+# # #
+# AD Federation Service
+# - install role
+# - join existing farm
+# - 2019 takes over and become primary
+# - decommision old servers
+# - upgrade functional level
+
+# # #
+# IP Management Roles
+# DHCP
+# - configure IP
+# DNS
+# - lookup services, servers, printers, websites, everything in AD
+
+# IP Address Management (IPAM) Server
+# SMIG Server Migration tools
+# Windows Defender ATP
+
+# PowerShell Port: 5985
+# RDP Port: 3389
+# Windows Admin Center Port: 6516
+
+# Windows Admin center
+
+Get-Disk
+Get-Volume
+
+Install-WindowsFeature DHCP -IncludeManagementTools
